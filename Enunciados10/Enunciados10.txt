@@ -1,0 +1,91 @@
+EJERCICIO 1
+-----------
+Haz un programa que pida al usuario una cadena (Scanner -> nextLine()) y la mostrará eliminando las vocales ('a' -> 'u', 'A' -> 'U').
+
+EJERCICIO 2
+-----------
+Haz un programa que pida al usuario una cadena y la muestre al revés.
+
+EJERCICIO 3
+-----------
+Haz un programa que pida al usuario una cadena y un índice de posición (entero). Recuerda que el índice debe ser un número desde 0 (incluido) hasta la longitud (sin incluir) de la cadena. En caso contrario, dará error el programa y repetirá la lectura.
+
+Después nos mostrará el número asociado al carácter de esa posición. Ejemplo: si la palabra es "bosque" y se indica el índice 2, el carácter es 's' y se corresponde con el número 115.
+
+EJERCICIO 4
+-----------
+Haz un programa que pida al usuario una cadena y luego 2 números, que serán índices de posición en la cadena (cuidado con lo que introduce el usuario). Los números pueden ir desordenados, es decir, no tiene por qué acordarse de meterlos de menor a mayor. Después, mostrará el trozo de la cadena que esté entre los dos índices.
+
+Por ejemplo: si introduce "escaleras" y los índices 7 y 4 (ordenados 4 y 7), entonces mostrará "lera", ya que la posición 4 es 'l' y la 7 es 'a'.
+
+NOTA: usa cadenaOriginal.substring(x, y), que devuelve una "subcadena" dentro de "cadenaOriginal" desde la posición "x" hasta la posición "y - 1".
+
+EJERCICIO 5
+-----------
+Haz un programa que pida un número de DNI (son de hasta 8 cifras) y devuelva la letra correspondiente a este. Ten en cuenta que las letras se calculan tal que:
+    1. Se divide el número entre 23 y se calcula el resto
+    2. El resto es el índice de posición para ubicar la letra en esta cadena: "TRWAGMYFPDXBNJZSQVHLCKE".
+
+EJERCICIO 6
+-----------
+Haz un programa que pida al usuario una cadena y nos diga cuántas vocales tiene en total, así como cuántos dígitos tiene en total.
+
+EJERCICIO 7
+-----------
+Haz un programa que pida un número, lo convierta en String con el "truco de la concatenación con un Strnig vacío", y luego muestre una escalera de desglose por unidades como en este ejemplo:
+
+Introduce un número: 5713
+
+5000
+ 700
+  10
+   3
+
+EJERCICIO 8
+-----------
+Usando "cad.contains(x)", haz un programa que pida 2 cadenas y nos diga si la primera está contenida en la segunda, si la segunda está contenida en la primera, o sin ninguna está contenida en ninguna. Por ejemplo:
+
+Introduce una cadena: tractor
+Introduce otra cadena: cto
+Resultado: la cadena 'cto' está contenida en la cadena 'tractor'.
+
+NOTA: "cad.contains(x)" permite saber si en la cadena "cad" está contenida la cadena "x". El resultado es un booleano.
+
+EJERCICIO 9
+-----------
+"Ahorcado versión fácil"
+
+Haz un programa que tenga una palabra secreta definida. Después, el usuario intentará adivinarla como si fuese un "Ahorcado".
+
+El usuario tiene 10 intentos en total (como si se fueran dibujando las partes del hombrecito y la horca). En cada intento se le pide una letra (léela como un String con "nextLine()", pero luego con "charAt(0)" podrás obtener el carácter en "char"). Ahora se le mostrará en qué huecos está y en cuáles no esa letra, poniendo '_' en los huecos no acertados.
+
+Cuando se acaben los 10 intentos o introduzca una exclamación de cierre (!), introducirá cuál cree que es la palabra. Si acierta, entonces ha ganado, pero si no, ha perdido.
+
+Ejemplo de salida por consola:
+
+Empieza el juego!
+
+Introduce una letra: a
+_a_a
+
+Introduce una letra: m
+____
+
+Introduce una letra: s
+__s_
+
+Introduce una letra: t
+____
+
+Introduce una letra: c
+c___
+
+Introduce una letra: !
+
+De acuerdo. ¿Cuál es la palabra?
+Tu respuesta: casa
+
+¡CORRECTO! ¡HAS GANADO!
+
+-----
+NOTA: si quieres, puedes intentar hacer la versión habitual del juego (más difícil), mostrando no solo dónde está la letra del intento, sino todas las anteriormente ingresadas también. Para ello es útil acumular las letras introducidas en un String auxiliar "letrasIntentadas" y después emplear la función de los String "cad.contains(x)". Y ya, si quisieras, podrías hacer el dibujo del ahorcado con caracteres especiales (busca en la tabla Unicode).

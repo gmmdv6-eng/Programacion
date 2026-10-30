@@ -1,0 +1,17 @@
+EJERCICIO 1
+-----------
+Haz un programa que pida al usuario un número entero y nos diga si es primo o no. Un número es primo cuando SOLAMENTE se puede dividir (resto 0) entre el 1 y él mismo. Por ejemplo: el 7 es primo, porque si probamos a dividir 7 entre cada número que hay de 1 a 7 (7/1, 7/2, 7/3, 7/4, 7/5, 7/6 y 7/7), solo sale una división exacta cuando es 7/1 y 7/7.
+
+EJERCICIO 2
+-----------
+Haz un programa que pida al usuario un número entero y nos diga si es un número perfecto o no. Los número perfectos son aquellos que equivalen a la suma de sus divisores propios (todos los enteros positivos que los dividen dando resto cero, a partir del 1, incluido, y hasta él mismo, sin incluir). Por ejemplo: el 6 es perfecto, porque sus divisores propios son 1, 2 y 3, que sumados dan 6.
+
+EJERCICIO 3
+-----------
+Haz un programa que pida al usuario un número entero y nos muestre si es un número narcisista o no. Un número narcisista es aquel que equivale a la suma de sus dígitos elevados al número de dígitos que tiene. Por ejemplo: 153 lo es, porque tiene 3 cifras y si se hace esta operación sale de nuevo 153: 1³ + 5³ + 3³ = 1 + 125 + 27 = 153.
+
+Para ello, primero obtén el número de cifras del número, y eso se hace con un bucle, dividiéndolo entre 10 tantas veces como se pueda hasta que quede 0. Por ejemplo: 652 tiene 3 cifras porque primero 652/10 da 65 (división entera, se ignora el 0.2 de los decimales), luego 65/10 da 6, y por último 6/10 da 0 (tres veces en total).
+
+Después, repite el mismo bucle, pero quédate con el resto en cada vuelta, que te dará una cifra aislada. Recuerda que las potencias se calculan con "Math.pow()". Acumula en una variable la suma de las potencias y, tras terminar el bucle, comprueba si ha salido el número original.
+
+IMPORTANTE: usa variables "copia" del número original o lo acabarás perdiendo.

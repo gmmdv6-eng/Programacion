@@ -1,0 +1,32 @@
+EJERCICIO 1
+-----------
+Hacer un programa que pida al usuario un número. Después, el programa contará desde el 1 hasta el número introducido. El número leído no puede ser menor que 1. En caso de que lo sea, se mostrará error y se acabará el programa.
+
+EJERCICIO 2
+-----------
+Hacer un programa que pida al usuario un número y haga una cuenta atrás, hasta 0 (incluido). De nuevo, el número leído no puede ser menor que 1. En caso de que lo sea, se mostrará error y se acabará el programa.
+
+EJERCICIO 3
+-----------
+Haz un programa que pida al usuario un número y, después, si quiere que se haga una cuenta hacia delante o hacia atrás. A continuación, se procede a hacer la cuenta, bien desde el 1 hasta el número (ascendente), bien desde el número hasta el 0 (descendente). Controla que los valores sean adecuados. En caso contrario, se muestra el error y se acaba.
+
+EJERCICIO 4
+-----------
+Haz un programa que pida al usuario 2 números y muestre los números que hay entre medias de ambos. Recuerda que puede introducirlos desordenados, no tiene por qué poner primero el inferior y después el superior. Si es el mismo número repetido, no mostraría nada.
+
+EJERCICIO 5
+-----------
+Haz un programa que pida al usuario dos números. El primero es el "tope" y el segundo es el "intervalo". Después, mostrará los números desde el 0 (incluido) hasta haber llegado o pasado el "tope", haciendo saltos de acuerdo al "intervalo".
+Por ejemplo: tope 7, intervalo 2 -> 0 2 4 6.
+
+EJERCICIO 6
+-----------
+Haz un programa que muestre las letras del abecedario en mayúsculas y en orden. Recuerda lo que vimos sobre los caracteres: son números. En la tabla, todas las letras de la 'A' a la 'Z' van seguidas y en orden. Parte de la 'A' y ve incrementando de 1 en 1 el número correspondiente. También Java permite hacer operaciones como ('A' + 1), puesto que convierte la 'A' en "int" y le suma 1 (o el valor que quieras).
+
+EJERCICIO 7
+-----------
+Haz un programa que pida dos números y muestre la suma acumulada de todos los que están entre medias (modificación del ejercicio 4). Por ejemplo: números 6 y 10 -> suma 7 + 8 + 9 = 24.
+
+EJERCICIO 8
+-----------
+Haz un programa que pida al usuario dos números: base y exponente. Luego calculará la potencia, pero sin utilizar "Math.pow()" para ello. Usa solo bucles, sumas y multiplicaciones.

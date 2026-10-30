@@ -1,0 +1,23 @@
+EJERCICIO 1
+-----------
+Haz un programa que ejecute los pasos de la Conjetura de Collatz. Una conjetura es algo que "parece que puede ser así, pero no está demostrado".
+
+La conjetura dice que, cualquier número entero mayor o igual que 1, siguiendo los siguientes pasos de forma constante, acaba en 4 -> 2 -> 1:
+
+1) Si el número es par -> dividirlo entre 2
+2) Si el número es impar -> multiplicarlo por 3 y sumarle 1
+3) Repetir hasta llegar a 4 -> 2 -> 1
+
+Ejemplo de salida por consola:
+
+Introduce un entero: 10
+-------
+5
+16
+8
+4
+2
+1
+Se ha alcanzado 4-2-1. Conjetura cumplida. Fin del programa.
+
+Vigila que el usuario introduce números mayores que 4 y controla que el formato es correcto con try-catch.

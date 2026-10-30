@@ -1,0 +1,35 @@
+EJERCICIO 1
+-----------
+Un cine tiene estas tarifas:
+
+Menores de 12 años → 5 €
+De 12 a 17 → 7 €
+De 18 a 64 → 10 €
+65 o más → 6 €
+
+Además:
+
+Si es miércoles, hay un descuento de 2 €.
+El precio nunca puede ser inferior a 3 €.
+
+Necesitamos un programa que pida al usuario la edad y el día de la semana, para luego devolverle el precio a pagar.
+
+EJERCICIO 2
+-----------
+Haz un programa que pida al usuario la nota de un examen del 0 al 10, con decimales. Después, le dirá a qué rango de calificaciones pertenece:
+
+0 - 4.9  → Suspenso
+5 - 6.9  → Aprobado
+7 - 8.9  → Notable
+9 - 10   → Sobresaliente
+
+Recuerda que las notas fuera de rango hay que contemplarlas como error, informando por consola.
+
+EJERCICIO 3
+-----------
+Haz un programa que tenga las siguientes variables con un valor fijado en código:
+
+- Saldo: número con decimales.
+- PIN: número de 4 dígitos.
+
+Después se pide al usuario una cantidad de dinero a extraer y el PIN. Si la cantidad es mayor que cero y el PIN es correcto, se retira la cantidad y se muestra el saldo actualizado. Si no, se notifica el error correspondiente.

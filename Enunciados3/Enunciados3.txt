@@ -1,0 +1,27 @@
+EJERCICIO 1
+-----------
+Haz un programa que pida al usuario un número entero y nos diga si es par o impar.
+
+EJERCICIO 2
+-----------
+Haz un programa que pida al usuario 4 números y los ordene de menor a mayor y luego de mayor a menor. Utiliza Math.min()/Math.max() para facilitar el proceso.
+
+EJERCICIO 3
+-----------
+Haz un programa que pida al usuario su edad (años), altura (metros) y peso (kilos). Después mostrará la edad en meses y también en días; la altura en centímetros y también milímetros; el peso en gramos.
+
+EJERCICIO 4
+-----------
+Haz un programa que pida al usuario cuántas unidades de cada producto quiere comprar, teniendo este catálogo:
+
+PAN → 0,75 €/unidad
+CHOCOLATE → 1,5 €/unidad
+REFRESCO → 0,65 €/unidad
+PIZZA → 2,8 €/unidad
+
+Luego, preguntar la edad.
+Por último, mostrar el total a pagar, teniendo en cuenta lo siguiente:
+
+1. Las compras que contengan al menos una unidad de cada producto tendrán una rebaja del 5% sobre el total a pagar.
+2. Las compras de más de 10€ tendrán una rebaja del 10% sobre el total a pagar.
+3. Los menores de 12 años tienen derecho a una rebaja del 5% solo si no se aplicó la rebaja del punto 1.

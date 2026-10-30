@@ -1,0 +1,69 @@
+EJERCICIO 1
+-----------
+Haz un programa que pida por teclado un entero y dibuje un rombo de asteriscos. El número introducido será la cantidad de la mitad del rombo.
+
+Ejemplo para un rombo de 5:
+  
+    *
+  * * *
+ * * * *
+* * * * *
+ * * * *
+  * * *
+    *
+
+EJERCICIO 2
+-----------
+Haz lo mismo pero con un rombo hueco.
+
+Ejemplo para un rombo de 5:
+
+    *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+    *
+
+EJERCICIO 3
+-----------
+Modifica tu programa de la Conjetura de Collatz para que, cuando acabe, muestre el "número pico", que es el valor más grande que alcanzó durante la sucesión.
+
+Por ejemplo, la sucesión de 6 es: 6, 3, 10, 5, 16, 8, 4, 2, 1. El "número pico" será 10.
+
+EJERCICIO 4
+-----------
+Haz un programa que pida al usuario un número y cree una escalera. El número será el límite hasta el cual tiene que llegar la escalera.
+
+Ejemplo para 6:
+
+1
+12
+123
+1234
+12345
+123456
+
+EJERCICIO 5
+-----------
+Haz un programa que pida al usuario números enteros de forma constante hasta que introduzca uno negativo. Entonces, parará de pedir y mostrará:
+
+- Número total de números introducidos
+- Suma total de todos los números introducidos
+- Media aritmética de todos los números introducidos
+- Número mayor y número menor de todos los números introducidos
+
+El número negativo que se introduzca para parar y mostrar resultados no se tiene en cuenta para el cálculo de estos.
+
+EJERCICIO 6
+-----------
+Haz un programa que genere un número secreto aleatorio entre 0 y 100 (ambos incluidos). Para ello, utiliza "Math.random()", que genera un número aleatorio de tipo "double" desde 0 (incluido) hasta 1 (sin incluir). Para que el número sea aleatorio pero en vez de en el rango [0,1) en el rango [0,101) (es decir, el 0 se incluye, pero el 101 no), se debe hacer este cálculo:
+
+int aleatorio = (int) (Math.random() * 101); // se pone 101 porque será desde 0 hasta 100 incluidos
+
+Luego, el usuario tendrá que adivinarlo, así que se le dan intentos de forma constante. Con cada intento fallado, el ordenador le dirá si el número secreto está "por arriba" o "por abajo" del que ha introducido.
+
+EJERCICIO 7
+-----------
+Haz un programa que pida números enteros por teclado y los vaya acumulando en una variable. Cuando se alcance el valor 100 exacto tras introducir 10 números o menos, el programa finalizará y dirá "100 alcanzado!". Si se pasa de 100 la cantidad o se han introducido ya 10 números y no se alcanzó el 100, el programa finalizará y dirá "100 sobrepasado" o "100 no alcanzado" (según lo que haya pasado).

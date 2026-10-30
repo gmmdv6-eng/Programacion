@@ -1,0 +1,58 @@
+EJERCICIO 1
+-----------
+Haz un programa que cree un array de enteros (inicializado en código, no interviene el usuario) y nos diga la media redondeada a 2 decimales (repasa el uso de System.out.printf("%.2f", num)).
+
+EJERCICIO 2
+-----------
+Haz un programa que cree un array de enteros (inicializado en código, no interviene el usuario) y nos diga el número más grande y el más pequeño.
+
+EJERCICIO 3
+-----------
+Haz un programa que cree dos arrays de enteros (inicializados en código, no interviene el usuario) y rellene un tercer array con la suma de los dos anteriores (se suman elementos de la misma posición). Ten en cuenta que los 3 arrays deben tener la misma longitud.
+
+EJERCICIO 4
+-----------
+Haz un programa que pida al usuario una longitud. Después, creará un array de enteroscon esa longitud y, a continuación, irá pidiendo al usuario que introduzca los valores de cada posición. Al final, mostrará el array entero y le dirá al usuario cuántos números pares/impares hay.
+
+EJERCICIO 5
+-----------
+Haz un programa que pida al usuario una longitud y cree un array de enteros con esa longitud, pero los valores de sus elementos serán aleatorios. Después, muéstralo.
+
+EJERCICIO 6
+-----------
+Haz un programa que cree una matriz (las dimensiones que sean) y la rellene con enteros aleatorios. Luego irá mostrando, indicando [fila,columna] las posiciones que tengan un elemento negativo. Por ejemplo:
+
+{
+    1, -2, 5,
+    -7, 0, 0,
+    8, -5, -4
+}
+
+Posiciones: [0,1] [1,0] [2,1] [2,2]
+
+EJERCICIO 7
+-----------
+Haz un programa que cree una matriz de strings (las dimensiones que sean, pero inicializada en código). Después, mostrará por pantalla la matriz, pero habiendo eliminado las letras 'a' o 'A' de las cadenas. Usa cadena.replaceAll(cadena_objetivo, "") para reemplazar por "" las letras o subcadenas que quieras.
+
+EJERCICIO 8
+-----------
+Haz un programa que cree una matriz de booleans de 3x3. Después, se rellenarán todas con "false" salvo 2, que serán "true" y representarán "minas". Luego, el usuario tiene que elegir, por intentos, hasta 4 celdas. Si el usuario elige en un turno una celda con mina, perderá. Si no, habrá ganado.
+
+EJERCICIO 9
+-----------
+Haz un programa que, dada una matriz de enteros generada aleatoriamente (las dimensiones que sean), permita al usuario realizar las siguientes operaciones:
+    1. Ver elemento en una posición: introduce fila y columna y muestra el valor que tiene.
+    2. Cambiar elemento en una posición: introduce fila y columna, luego un valor nuevo, y lo actualiza en la posición indicada.
+    3. Ver cuántos por encima de un valor: introduce un valor y muestra cuántos elementos están por encima.
+    4. Salir del programa.
+
+EJERCICIO 10
+-----------
+Haz un programa que, dado un array de enteros generado aleatoriamente, lo ordene de menor a mayor. Para ello, puedes emplear la típica táctica de "elegir el menor y ponerlo en la primera posición en un nuevo array". Pero, y de hecho es lo que deberías hacer, también puedes realizar "el algoritmo de la burbuja". Busca en qué consiste y trata de implementarlo.
+
+EJERCICIO 11
+------------
+Haz un programa que, dado un array de letras ("char", pero solo letras "a-z" o "A-Z") ordenado de menor a mayor (orden alfabético, cuidado con mayúsculas y minúsculas), pida al usuario un valor y diga en qué posición se encuentra (o si no está en el array). Para ello, implementa el "algoritmo de búsqueda binaria", que consiste en:
+    1. Mirar el elemento de la mitad.
+    2. Si es el elemento buscado: encontrado.
+    3. Si no, entonces repetir desde el paso uno pero en la mitad inferior o en la superior, dependiendo de si es mayor o menor.

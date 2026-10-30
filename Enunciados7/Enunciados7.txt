@@ -1,0 +1,22 @@
+EJERCICIO 1
+-----------
+Haz un programa que permita al usuario averiguar si un número es capicua, que es el que se lee igual de izquierda a derecha que de derecha a izquierda (ejemplo: 121, 1331).
+
+EJERCICIO 2
+-----------
+Haz un programa que permita al usuario averiguar si dos números DISTINTOS son amigos, es decir, que la suma de los divisores propios (del 1, incluido, hasta el número en sí, sin incluir) de uno sea igual al otro (ejemplo: 220 y 284).
+
+EJERCICIO 3
+-----------
+Haz un programa que pida al usuario un número N y genere los N primeros términos de la secuencia de Fibonacci, donde cada número es la suma de los dos anteriores (0, 1, 1, 2, 3, 5, 8...).
+
+EJERCICIO 4
+-----------
+Haz un programa que permita al usuario averiguar si un número es feliz, que es el que, al calcular la suma de los cuadrados de sus dígitos repetidamente, llega eventualmente al 1.
+
+Ejemplo: 19
+
+1. 1² + 9² = 1 + 81 = 82
+2. 8² + 2² = 64 + 4 = 68
+3. 6² + 8² = 36 + 64 = 100
+4. 1² + 0² + 0² = 1

@@ -1,0 +1,31 @@
+EJERCICIO 1
+-----------
+Necesitamos desarrollar una aplicación que permita gestionar la cuenta bancaria de un cliente.
+
+Inicialmente, la cuenta bancaria cuenta con un saldo de 541.83 euros (moneda con la que trabaja el banco). El usuario utilizará las distintas operaciones sobre su cuenta hasta que decida salir. Estas opciones son:
+
+- Ingresar dinero
+- Retirar dinero
+- Calcular efectivo
+
+Al arrancar la aplicación, pediremos al usuario que se identifique. El usuario tiene que introducir el nombre con el que quiere que le llamemos, así como la contraseña numérica "1234". Si no introduce la contraseña correcta, el programa se acabará ahí con un mensaje de "contraseña incorrecta".
+
+En caso de que se haya loggeado, mostraríamos un mensaje "Bienvenid@, [nombre]!"
+
+Cuando elija la opción "ingresar", le pediremos la cantidad que quiere meter. Si es una cantidad coherente (más de cero), entonces aumentaremos el saldo en esa cantidad.
+
+Cuando elija la opción "retirar", le pediremos la cantidad que quiere sacar. Si es una cantidad coherente (más de cero y máximo lo que tiene en la cuenta), entonces decrementaremos el saldo en esa cantidad.
+
+Cuando elija la opción "calcular efectivo", le tendremos que decir cuántos billetes de cada tipo (solo de 50, 20 y 10) le podemos dar. Esto se calcula de la siguiente forma: se mira primero cuantos billetes de 50 se pueden hacer dentro del saldo disponible; luego, con lo que quede, se hace lo mismo pero para los de 20; por último, mismo cálculo para los de 10. Por ejemplo: si la persona tiene 232.52 euros en la cuenta, se pueden sacar 4 billetes de 50 (que sumarían 200 euros), 1 de 20, 1 de 10 y sobrarían 2.52 euros. Entonces, la salida a imprimir sería esta (sigue la misma estructura, aplicando saltos de línea, tabulaciones y formato de 2 decimales para las cantidades de dinero):
+
+                Cantidad    Total
+-----------------------------------------
+Billetes de 50: 4           200.00
+Billetes de 20: 1           20.00
+Billetes de 10: 1           10.00
+-----------------------------------------
+Total billetes:             230.00
+-----------------------------------------
+Resto:                      2.52
+-----------------------------------------
+Total saldo:                232.52
