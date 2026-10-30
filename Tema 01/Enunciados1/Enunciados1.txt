@@ -1,0 +1,26 @@
+EJERCICIO 1
+-----------
+Haz un programa que pida un año y diga si es bisiesto o no.
+Un año bisiesto es aquel que cumple este algoritmo:
+
+1. Si el año es uniformemente divisible en 4, vaya al paso 2. De lo contrario, vaya al paso 5.
+2. Si el año es divisible uniformemente en 100, vaya al paso 3. De lo contrario, vaya al paso 4.
+3. Si el año es divisible uniformemente en 400, vaya al paso 4. De lo contrario, vaya al paso 5.
+4. EL AÑO ES BISIESTO
+5. EL AÑO NO ES BISIESTO
+
+EJERCICIO 2
+-----------
+Haz un programa que pida al usuario los 3 lados de un triángulo y la altura del primer lado leído. Luego, mostrará el perímetro (suma de lados) y el área (base por altura entre 2) del triángulo.
+
+EJERCICIO 3
+-----------
+Recrea el juego de "piedra, papel o tijera". Para ello, se pide primero al jugador 1 su elección. Luego, el jugador 2 introduce la suya. Por último, se muestra quién ha ganado o si ha habido empate.
+
+Recuerda: piedra gana a tijera, tijera gana a papel y papel gana a piedra.
+
+EJERCICIO 4
+-----------
+Haz un programa que pida al usuario el radio de una circunferencia y calcule su longitud, así como el área del círculo que delimita.
+
+Usa "Math.PI" para hacer un cálculo mucho más preciso en vez de poner "3.14".
