@@ -1,1 +1,24 @@
-corregir
+---------------
+JUEGO DE CARTAS
+---------------
+
+Crea un juego de cartas utilizando Orientación a Objetos en Java. Para ello, necesitarás dos clases:
+
+- Main
+- Juego
+- Carta
+
+Juego contendrá la baraja de cartas: un array de objetos Carta. Cada posición del array será, por tanto, una carta.
+
+Las cartas tienen un palo y un número.
+
+Para este juego, se usará la baraja española: 4 palos (oros, bastos, copas y espadas) y 10 cartas por cada palo, numeradas del 1 al 7 (normales) y del 10 al 12 (figuras: sota, caballo y rey).
+
+Los métodos de la clase Juego son:
+
+- barajar: mezcla de forma aleatoria las cartas.
+- robar: devuelve la carta de arriba del todo de la baraja (primera posición).
+- descartar: la carta de arriba del todo se deshecha.
+- jugar: roba una carta y suma 1 punto cuando la carta es par, pero si es impar, no suma nada y descarta las dos siguientes.
+
+Es un juego "solitario", así que el jugador va haciendo turnos (llamadas al método jugar) y, cuando se acaben las cartas del montón, se muestra la puntuación obtenida y se termina.
