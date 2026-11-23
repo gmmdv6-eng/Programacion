@@ -1,0 +1,8 @@
+Haz una aplicación que permita registrar 
+los datos de coches.
+Un coche tiene matrícula, número de ruedas,
+número de plazas, kilómetros recorridos,
+si está apagado/encendido y la capacidad
+de depósito en litros.
+Hay que pedir al usuario los datos de su coche
+y construirlo.
