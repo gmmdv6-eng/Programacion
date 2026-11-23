@@ -1,1 +1,38 @@
-Cambiarlo
+Ejercicio: Gestión de reservas de un hotel
+------------------------------------------
+Un pequeño hotel necesita un programa para gestionar las reservas de sus habitaciones. Para ello, vamos a crear una clase que represente una reserva y otra clase desde la que probaremos su funcionamiento.
+
+1. Clase Reserva
+Crea una clase llamada Reserva con los siguientes atributos públicos:
+
+nombreCliente: nombre de la persona que realiza la reserva.
+numeroHabitacion: número de habitación reservada.
+numeroNoches: número de noches de la reserva.
+precioNoche: precio de una noche en esa habitación.
+activa: indica si la reserva está activa o ha sido cancelada.
+
+Métodos que debes implementar:
+
+Constructores
+mostrarReserva(): mostrará por pantalla todos los datos de la reserva. No recibe parámetros ni devuelve ningún valor.
+calcularPrecioTotal(): calculará y devolverá el precio total de la estancia (número de noches multiplicado por el precio de cada noche). No recibe parámetros.
+ampliarEstancia(número de noches): recibirá un número de noches y lo sumará a la duración de la reserva, siempre que la reserva esté activa y el número recibido sea positivo. No devuelve ningún valor.
+cancelarReserva(): cambiará el estado de la reserva a inactiva. No recibe parámetros ni devuelve ningún valor. Si ya estaba cancelada, mostrará un mensaje indicándolo.
+aplicarDescuento(porcentaje): recibirá un porcentaje de descuento y reducirá el precio por noche según dicho porcentaje. Solo se aceptarán porcentajes entre 0 y 100. No devuelve ningún valor.
+esEstanciaLarga(): devolverá true si la reserva tiene más de 7 noches y false en caso contrario. No recibe parámetros.
+obtenerEstado(): devolverá un texto indicando si la reserva está activa o cancelada. No recibe parámetros.
+
+2. Clase Principal
+Crea la clase principal, que contendrá el método main.
+
+El programa tendrá que:
+
+Crear dos reservas diferentes, con distintos clientes, habitaciones, duraciones y precios.
+Mostrar los datos iniciales de ambas reservas.
+Calcular y mostrar el precio total de cada estancia.
+Ampliar la estancia de uno de los clientes.
+Aplicar un descuento a una de las reservas.
+Comprobar si alguna de las estancias es larga.
+Cancelar una de las reservas.
+Consultar y mostrar el estado de ambas reservas.
+Volver a mostrar toda la información para comprobar los cambios realizados.
