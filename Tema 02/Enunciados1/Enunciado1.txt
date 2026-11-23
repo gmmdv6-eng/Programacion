@@ -1,0 +1,106 @@
+Ejercicio 1: Gestión de mascotas
+Crea una clase llamada Mascota que permita representar mascotas de una tienda de animales.
+La clase tendrá los siguientes atributos públicos:
+• nombre.
+• especie.
+• edad.
+• peso.
+Implementa los siguientes constructores:
+• Un constructor vacío.
+• Un constructor que reciba todos los atributos como parámetros.
+Implementa los siguientes métodos:
+• mostrarInformacion(): muestra por pantalla todos los datos de la mascota.
+• crecer(años): incrementa la edad de la mascota según los años recibidos.
+• comer(cantidad): incrementa el peso de la mascota según la cantidad recibida.
+Ejercicio2: Aplicación de gestión de una cuenta bancaria
+Crea una clase llamada CuentaBancaria que represente una cuenta bancaria.
+La clase tendrá los siguientes atributos:
+• titular: nombre del titular de la cuenta.
+• numeroCuenta: identificador de la cuenta bancaria.
+• contrasena: contraseña necesaria para acceder a la cuenta.
+• saldo: dinero disponible en la cuenta.
+Implementa los siguientes constructores:
+• Un constructor vacío que inicialice los atributos con valores por defecto.
+• Un constructor completo que reciba el titular, el número de cuenta y la contraseña.
+Implementa los siguientes métodos:
+a) ingresarDinero(cantidad)
+Recibe una cantidad de dinero y la suma al saldo de la cuenta.
+b) retirarDinero(cantidad)
+Recibe una cantidad de dinero y la resta del saldo de la cuenta. Se permitirá que la cuenta quede en
+números negativos (descubierto).
+c) mostrarDatos()
+Muestra por pantalla la siguiente información:
+• Titular.
+• Número de cuenta.
+• Saldo actual.
+• Estado: con o sin deudas
+La contraseña nunca deberá mostrarse.
+d) tieneDeudas()
+Devuelve un valor booleano que indica si la cuenta tiene deudas. Una cuenta tendrá deudas cuando
+su saldo sea inferior a cero.
+e) calcularDevaluacion(años, tasaDevaluacion)
+Calcula cuánto dinero perdería el saldo actual de la cuenta debido a la devaluación del dinero
+durante un número determinado de años.
+El método recibirá dos parámetros:
+• años: número de años durante los que se aplica la devaluación.
+• tasaDevaluacion: porcentaje de devaluación anual expresado como porcentaje.
+Se deberá aplicar una devaluación compuesta, de manera que cada año el dinero pierda el
+porcentaje indicado respecto a su valor del año anterior.
+El método devolverá el valor que tendrá el dinero después de aplicar la devaluación.
+Ejemplo: si tenemos 1.000 € y aplicamos una devaluación anual del 3 % durante 2 años, el valor
+resultante será:
+1000 × (1 – tasaDevaluacion / 100)² = 940,90 €
+El método no debe modificar el saldo real de la cuenta, únicamente debe calcular y devolver su
+valor devaluado.
+Clase principal (Main)
+Crea una clase principal que permita utilizar la clase CuentaBancaria.
+Paso 1. Creación de la cuenta
+Al iniciar el programa, se deberá crear una cuenta bancaria con los datos que se consideren
+oportunos, salvo el saldo, que siempre comenzará a 0.
+Paso 2. Acceso mediante contraseña
+Antes de mostrar el menú de opciones, el programa deberá solicitar al usuario la contraseña de la
+cuenta.
+• El usuario tendrá un máximo de 3 intentos para introducir la contraseña correctamente.
+• Si introduce la contraseña correcta, podrá acceder al menú principal.
+• Si falla los 3 intentos, el programa mostrará un mensaje indicando que la cuenta ha sido
+bloqueada por seguridad y finalizará la aplicación.
+Paso 3. Menú principal
+Una vez que el usuario haya accedido correctamente, se mostrará repetidamente el siguiente menú:
+========== GESTIÓN BANCARIA ==========
+1. Ingresar dinero
+2. Retirar dinero
+3. Mostrar datos de la cuenta
+4. Consultar si tengo deudas
+5. Calcular devaluación del dinero
+6. Salir
+Seleccione una opción:
+Las opciones deberán funcionar de la siguiente manera:
+Opción 1. Ingresar dinero
+• Solicitar al usuario una cantidad.
+• Llamar al método correspondiente de la clase CuentaBancaria.
+• Mostrar un mensaje indicando si la operación se ha realizado correctamente.
+Opción 2. Retirar dinero
+• Solicitar al usuario una cantidad.
+• Llamar al método correspondiente.
+• Mostrar el resultado de la operación.
+Opción 3. Mostrar datos de la cuenta
+• Llamar al método correspondiente.
+Opción 4. Consultar si tengo deudas
+• Llamar al método correspondiente.
+• En función del resultado booleano, mostrar uno de estos mensajes:
+• "La cuenta tiene deudas".
+• "La cuenta no tiene deudas".
+Opción 5. Calcular devaluación del dinero
+• Solicitar el número de años.
+• Solicitar la tasa de devaluación anual.
+• Llamar al método correspondiente.
+• Mostrar el saldo actual y el valor que tendría el dinero después de aplicar la devaluación.
+Opción 6. Salir
+• Mostrar un mensaje de despedida.
+• Finalizar el bucle y terminar la aplicación.
+3. Requisitos
+• No se podrá acceder al menú sin introducir previamente la contraseña correcta.
+• El saldo inicial siempre será de 0 euros.
+• El menú deberá repetirse hasta que el usuario seleccione la opción de salir.
+• Se tienen que controlar errores de ingreso por teclado (números, cantidades menores que 0,
+opción desconocida…).
